@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Thinh Nguyen
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Thinh Nguyen} \\ \vspace{1pt}
+    \small 765-712-3003 $|$ \href{mailto:ngducthinh0501@gmail.com}{\underline{ngducthinh0501@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/thinhnguyen2004}{\underline{linkedin.com/in/thinhnguyen2004}} $|$
+    \href{https://github.com/thinhnguyen2026}{\underline{github.com/thinhnguyen2026}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DePauw University}{Greencastle, IN}
+      {Bachelor of Arts in Computer Science and Business Analytics, Minor in Data Science}{Graduation May 2026}    
+        \begin{itemize}
+            \item {\textbf{Certifications:} \href{https://drive.google.com/file/d/1dv8l6AnSZnbZ3kfPi0Ll2GWzgBpl-BIZ/view}{IBM Python for Data Science, AI and Development (Coursera)}, \href{https://drive.google.com/file/d/1d4jQ586cXonD85_TsIsrkie5M4O631eL/view?usp=sharing}{Databases and SQL for Data Science with Python}, \href{https://drive.google.com/file/d/1qO17zJczFdyqvD-n1KdpH_S2pjaCYBN7/view}{CodePath Advanced Technical Interview Prep},
+            \href{https://drive.google.com/file/d/1KFJwFd-aVbnMlLmq5R7Pd7LqcZL8-T7N/view}{Bloomberg Market Concepts}}
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+              {\textbf{Option Hedging Project}}{Jun 2021 -- Jan 2022}
+              \resumeItemListStart
+                \resumeItem{Collected historical and implied volatility data for NVDA stock over a 2-month period using Bloomberg, and performed dynamic hedging with American and European options to deliver low-risk investment recommendations}
+                \resumeItem{Developed Black-Scholes and Binomial Tree models in Excel using Solver and Macro functions, achieving 95\% alignment with real-time market data for accurate and reliable stock option predictions and analysis}
+                \resumeItem{Drafted a comprehensive five-page memo outlining results and explaining the hedge strategies, providing clients with strategic investment insights, enhancing decision-making and optimizing portfolio management}
+              \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{SQL-Based Analysis of Chicago Public Schools Performance}}{May 2024}
+          \resumeItemListStart
+            \resumeItem{Conducted a comprehensive SQL analysis of Chicago Public Schools data, identifying 462 schools and revealing a correlation between safety scores and higher engagement, supporting recommendations for resource allocation}
+            \resumeItem{Applied advanced SQL queries with JOIN, GROUP BY, and HAVING, using SQLite and MySQL to analyze performance metrics, revealing schools with enrollment rates below 50\%, highlighting areas for intervention}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Housing Prices Prediction Project}}{October 2024}
+          \resumeItemListStart
+            \resumeItem{Performed comprehensive exploratory data analysis (EDA) to identify key predictors through detailed correlation analysis and visualizations such as scatter plots, box plots, and informative heatmaps}
+            \resumeItem{Developed two linear regression models, predicted housing prices with accuracy, compared the prediction performance between models, and provided in-depth insights on statistically significant predictors}
+            \resumeItem{Authored an 18-page essay explaining the entire process of data processing, model selection, predictive results, and key findings, while highlighting actionable insights that could be applied to real-world housing market analyses}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {Trends in U.S. Smoking and Cessation Insights Research}{May 2024 -- Present}
+      {DePauw University}{Greencastle, IN}
+      \resumeItemListStart
+        \resumeItem{Utilized R and Excel to process 10,000+ data points from BRFSS 2015 and 2022 surveys, cutting data processing time by 50\%, eliminating N/A values, and providing a clean dataset for accurate research analysis}
+        \resumeItem{Applied cross-tabulations, Chi-Square tests, and logistic regression models to analyze 5,000\(+\) cases, identifying key socioeconomic factors influencing smoking patterns with significant results (p-value \(< \)0.001)}
+        \resumeItem{Developed visualizations using bar charts and odds ratio plots to present findings on smoking prevalence by gender, education, and income, significantly contributing to data-driven public health recommendations}
+        \resumeItem{Presented research findings through a research paper and poster, delivering insights to an audience of 2,000 students and 50 professors, and emphasizing the need for targeted interventions in high-risk demographic groups}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Information Technology Associates Program Apprentice}{Oct. 2022 -- Present}
+      {The Tenzer Technology Center}{Greencastle, IN}
+      \resumeItemListStart
+        \resumeItem{Designed an interactive Tableau dashboard featuring U.S. state-wise seasonal wind speed and wind bearing trends, allowing users to explore over 5,000 data points dynamically and presented the results to 20 colleagues and directors, enhancing decision-making for weather-related strategies across different regions}
+        \resumeItem{Constructed advanced data reporting and visualization tools using Microsoft Power BI for JPM, significantly improving financial transparency, accelerating decision-making processes, and successfully presenting the results to 20 teammates and directors to enable more comprehensive real-time insights and informed strategic discussions}
+    \resumeItemListEnd
+
+    
+
+  \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: SQL (MySQL), Python, R, C/C++, Java} \\
+     \textbf{Other}{: Tableau Visualization, Power BI, Microsoft Office Products}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
